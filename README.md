@@ -2,7 +2,7 @@
 This program is created to download and extract bulks of Årsredovisningar in ZIP-files within the internal memory. The program is set up as two scripts: 
 
 ## 01_URL_links: Fetch URL links
-Docker and RSelenium are used to collect all URL-links that contain the zipped XHTML-files of Årsredovisningar. If the very latest version is not needed, simply use the provided CSV-files in folder URL.
+Docker and RSelenium are used to collect all URL-links that contain the zipped XHTML-files of Årsredovisningar. If the very latest version is not needed, simply use the provided CSV-files in folder URL (one CSV-file per year).
 
 ## 02_fetch_docs_clean_SWE: Fetch the documents
 All links contain zipped XHTML-files. The script downloads the ZIP-files to the *internal* memory where the XTHML-files are unpacked. All XHTML-documents are then stripped off of their format-code and pasted into a table. Each row consists of one document.  
