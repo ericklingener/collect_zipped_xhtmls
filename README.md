@@ -1,7 +1,7 @@
 ## collect_zipped_xhtmls
 Scapes and loops bulks of documents.  
 
-# Folder sructure
+# Folder structure
 Arsredovisningar/
 ├─ code/                    
 ├─ data_files/
