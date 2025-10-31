@@ -1,15 +1,6 @@
 # 0. Förberedelser ####
 # rm(list=ls())
 
-# MAPPSTRUKTUR
-# Arsredovisningar/
-#   ├─ code/                    
-#   ├─ data_files/
-#   │  ├─ URLs/                 
-#   │  │   └─ file_links_2025.csv
-#   │  └─ results/              
-#   │      └─ arsredovisningar_2025-10-26_12-00-00.csv
-
 
 # Ladda paket
 pacman::p_load(curl, dplyr, xml2, progress)
