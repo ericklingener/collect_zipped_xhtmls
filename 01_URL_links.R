@@ -4,6 +4,9 @@
 pacman::p_load(dplyr, lubridate, parallel, RSelenium, httr, curl)
 pacman::p_isloaded(dplyr, lubridate, parallel, RSelenium, httr, curl)
 
+#Utdata-path av den färdiga tabellen med årsredovisningar
+path <- "/.../data_files/URLs/" # Ange path dit den färdiga tabellen med alla XHTML-rader kommer exporteras
+
 # ####
 # 1. Access RSelenium through Docker ####
 # Start Docker program 
@@ -77,7 +80,6 @@ for (year in years) {
 }
 
 # 3. Export all links to separate CSV files ####
-path <- "/Users/beatrice.hedlund/Desktop/R program/07_Arsredovisningar/data_files/URLs/"
 timestamp <- format(Sys.time(), "%Y-%m-%d_%H-%M-%S")
 
 # Save each year's links to CSV-flies

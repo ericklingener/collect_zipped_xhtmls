@@ -7,10 +7,10 @@ pacman::p_load(curl, dplyr, xml2, progress)
 pacman::p_isloaded(curl, dplyr, xml2, progress)
 
 # Indata-path för att hämta alla CSB-filer med nedladdningslänkar
-in_path_file_links <- "/Users/beatrice.hedlund/Desktop/R program/07_Arsredovisningar/data_files/URLs" 
+in_path_file_links <- "/.../data_files/URLs" # Ange path där CSV-filerna med URLerna ligger sparade
 
 #Utdata-path av den färdiga tabellen med årsredovisningar
-out_path_arsredovisningar <- "/Users/beatrice.hedlund/Desktop/R program/07_Arsredovisningar/data_files/results/"
+out_path_arsredovisningar <- "/.../data_files/results/" # Ange path dit den färdiga tabellen med alla XHTML-rader kommer exporteras
 
 # ####
 
